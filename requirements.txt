@@ -1,0 +1,10 @@
+pandas
+wordcloud
+Pillow
+python-docx
+
+# POS tagging real para las nubes de conceptos positivos/negativos (opcional).
+# Sin spaCy, el pipeline usa un fallback heurístico por terminaciones.
+# Instalar:
+#   pip install spacy
+#   python -m spacy download es_core_news_sm
