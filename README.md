@@ -46,6 +46,9 @@ la Skill, pero desconozco su funcionalidad en IG.
 - Queda pendiente adaptaciones para otros harness de IA: Opencode, Hermes, Openclaw, Llama,
 Deepseek etc.
 
+# ¿Por qué no API?
+- Sencillamente coste, mientras que el plan más económico de **Command-code cuesta 1 dólar,
+un plan de API bueno puede costar mucho más al mes.
 
 Créditos: Juan Pablo González Urriola
 
