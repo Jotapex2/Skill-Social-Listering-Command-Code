@@ -1,4 +1,4 @@
-# social-listening-v2
+## social-listening-v2
 
 Skill de **social listening** para X (Twitter) e Instagram: recolecta publicaciones y comentarios
 sobre un tema y una fecha, los consolida en una base de datos y genera un informe con nubes de
@@ -14,7 +14,7 @@ del harness. Los modelos gringos suelen dar problemas debido a que el scraping d
 sus términos y condiciones.Igualmente ha funcionado en **Deepseek-Harness**, **Codex** y
  **Antigravity***
 
-# Problemas conocidos:
+## Problemas conocidos:
 - Cuando la skill te pide iniciar sesión, ya que, esta hace un scraping con alguna sesión de alguna
 cuenta de IG o X (No es necesario que ocupes la personal, puedes crear una para ello), a veces en
 X no te deja iniciar. Solo tienens que abrir una pestaña aparte, entrar a x.com y loguearte.
@@ -26,7 +26,7 @@ con sus **métricas**.
 - Solo funciona con navegadores en base **chormiun** o sea, Google Chorme, Brave, Edge. Igual
 puedes pedirle otro tipo Vivaldi u opera, por ejemplo.
 
-# Tips de uso:
+## Tips de uso:
 - Te recomiendo que ocupes la metodología SDD (Spec Diven Depelovement), la ocupan los ingenieros de
 IA para hacer una especie de vibecoding premiun que crea aplicaciones escalables y plenamente 
 funcionales.
@@ -36,13 +36,20 @@ acá para que no se pierda), de **(PONER TEMA y Keywords)** desde **(fecha inici
 **(fecha término análisis)**. 
 - Después lee el plan y ve conversando con la IA para refinarlo y ejecutar el análisis.
 - Post análisis puedes pedir profundización en ciertos tópicos.
+- Si es un caso de alto impacto público, puedes pedir en el plan que revise también las cuentas de
+**influencers** y **medios de comunicación** de tu país.
 
-# Limitaciones:
-- Al igual que el análisis de RRSS por API, solo lee cuentas públicas, no cuentas privadas.
+## Limitaciones:
+- Al igual que el análisis de RRSS por API, solo lee cuentas públicas, no cuentas privadas, por
+  ende, es una muestra parcial. 
 - Solo lee los copy de los posteos, no los reels, eso es bastante complicado aún. 
 - Queda pendiente adaptaciones para otros harness de IA: Opencode, Hermes, Claude.
+- X puede pedir login o aplicar límites de tasa; Instagram sólo muestra contenido público visible
+  con sesión iniciada.
+- El sentimiento es orientativo (léxico español conservador); muchos textos quedan `sin_clasificar`.
+- Las nubes muestran el top de términos; el detalle completo está en los CSV.
 
-# ¿Por qué no API?
+## ¿Por qué no API?
 - Sencillamente coste, mientras que el plan más económico de **Command-code** cuesta 1 dólar,
   Deepseek te cuesta algunos céntimos, **Opencode** es gratis, **Antigravity** te regalan subs...
   un plan de API bueno puede costar mucho más al mes.
@@ -153,11 +160,4 @@ ni sustantivos institucionales. Con spaCy (`es_core_news_sm`) se etiqueta gramat
 token y se conservan los `VERB`/`ADJ`; sin spaCy, se aplica un heurístico por terminaciones de
 verbo/adjetivo más el descarte de palabras que solo aparecen capitalizadas.
 
-## Límites
 
-- La cobertura es **parcial y no determinista**: los buscadores de X e Instagram devuelven un
-  subconjunto, no todo.
-- X puede pedir login o aplicar límites de tasa; Instagram sólo muestra contenido público visible
-  con sesión iniciada.
-- El sentimiento es orientativo (léxico español conservador); muchos textos quedan `sin_clasificar`.
-- Las nubes muestran el top de términos; el detalle completo está en los CSV.
