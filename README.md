@@ -11,8 +11,8 @@ a otra máquina tal cual.
 - Esto está pensado para ser utilizado directamente en **Command-Code**, yo personalmente lo ocupo con 
 deepseek 4.1 flash o algún modelo similar, ya que, depende del **agent-browser** que es específico 
 del harness. Los modelos gringos suelen dar problemas debido a que el scraping de RRSS puede violar 
-sus términos y condiciones. No la he probado en **opencode** u otros, pero se podría adaptar.
-**Command-Code** no es caro, el plan más barato vale 1 dólar.
+sus términos y condiciones.Igualmente ha funcionado en **Deepseek-Harness**, **Codex** y
+ **Antigravity***
 
 # Problemas conocidos:
 - Cuando la skill te pide iniciar sesión, ya que, esta hace un scraping con alguna sesión de alguna
@@ -40,15 +40,12 @@ acá para que no se pierda), de **(PONER TEMA y Keywords)** desde **(fecha inici
 # Limitaciones:
 - Al igual que el análisis de RRSS por API, solo lee cuentas públicas, no cuentas privadas.
 - Solo lee los copy de los posteos, no los reels, eso es bastante complicado aún. 
-- Los modelos estadounidenses (Claude,GPT,Gemini,Meta) y Mistral pueden poner problemas 
-por el tema de términos y condiciones. Grok es bueno haciendo análisis en X y no es necesaria
-la Skill, pero desconozco su funcionalidad en IG.
-- Queda pendiente adaptaciones para otros harness de IA: Opencode, Hermes, Openclaw, Llama,
-Deepseek etc.
+- Queda pendiente adaptaciones para otros harness de IA: Opencode, Hermes, Claude.
 
 # ¿Por qué no API?
-- Sencillamente coste, mientras que el plan más económico de **Command-code cuesta 1 dólar,
-un plan de API bueno puede costar mucho más al mes.
+- Sencillamente coste, mientras que el plan más económico de **Command-code** cuesta 1 dólar,
+  Deepseek te cuesta algunos céntimos, **Opencode** es gratis, **Antigravity** te regalan subs...
+  un plan de API bueno puede costar mucho más al mes.
 
 Créditos: Juan Pablo González Urriola
 
